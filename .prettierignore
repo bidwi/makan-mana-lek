@@ -1,2 +1,3 @@
 src/styles/main.scss
 src/styles/responsive.scss
+.github/workflows/ci.yaml
