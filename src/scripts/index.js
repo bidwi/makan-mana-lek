@@ -4,7 +4,6 @@ import '../styles/responsive.scss';
 import './views/pages/main-page';
 import App from './views/app';
 import swRegister from './utils/sw-register';
-import './components/mml-footer';
 
 const app = new App({
   button: document.querySelector('#hamburger'),
