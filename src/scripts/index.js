@@ -4,7 +4,6 @@ import '../styles/responsive.scss';
 import './views/pages/main-page';
 import App from './views/app';
 import swRegister from './utils/sw-register';
-import './components/mml-footer';
 
 const app = new App({
   button: document.querySelector('#hamburger'),
@@ -14,6 +13,7 @@ const app = new App({
   home: document.querySelector('#home'),
   skipLink: document.getElementsByClassName('skip-link'),
   urlLink: window.location.href,
+  footer: document.querySelector('#aFooter'),
 });
 
 window.addEventListener('hashchange', () => {
