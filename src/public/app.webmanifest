@@ -1,0 +1,76 @@
+{
+  "id": "restaurant-makan-mana-lek",
+  "start_url": "./index.html",
+  "name": "Makan Mana Lek",
+  "short_name": "Makan Mana",
+  "description": "Kunjungi Resto di Seluruh Indonesia!",
+  "display": "standalone",
+  "background_color": "#BE3030",
+  "theme_color": "#FF7100",
+  "icons": [
+    {
+      "src": "/icons/icon-makan-mana-lek72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-makan-mana-lek96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-makan-mana-lek128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-makan-mana-lek144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-makan-mana-lek152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-makan-mana-lek192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-makan-mana-lek384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-makan-mana-lek512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/hero/hero-1-large.jpg",
+      "sizes": "800x533",
+      "type": "image/gif",
+      "form_factor": "wide",
+      "label": "Application"
+    },
+    {
+      "src": "/hero/manifest-screenshot-hero-large.jpg",
+      "sizes": "800x533",
+      "type": "image/gif",
+      "form_factor": "narrow",
+      "label": "Mobile"
+    }
+  ]
+}
