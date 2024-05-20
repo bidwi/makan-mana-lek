@@ -13,6 +13,7 @@ const app = new App({
   home: document.querySelector('#home'),
   skipLink: document.getElementsByClassName('skip-link'),
   urlLink: window.location.href,
+  footer: document.querySelector('#aFooter'),
 });
 
 window.addEventListener('hashchange', () => {

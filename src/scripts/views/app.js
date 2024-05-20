@@ -3,7 +3,16 @@ import UrlParser from '../routes/url-parser';
 import routes from '../routes/routes';
 
 class App {
-  constructor({ button, drawer, content, fokus, home, skipLink, urlLink }) {
+  constructor({
+    button,
+    drawer,
+    content,
+    fokus,
+    home,
+    skipLink,
+    urlLink,
+    footer,
+  }) {
     this._button = button;
     this._drawer = drawer;
     this._content = content;
@@ -11,6 +20,7 @@ class App {
     this._home = home;
     this._skipLink = skipLink;
     this._urlLink = urlLink;
+    this._footer = footer;
 
     this._initialAppShell();
   }
@@ -24,6 +34,7 @@ class App {
       home: this._home,
       skipLink: this._skipLink,
       urlLink: this._urlLink,
+      footer: this._footer,
     });
   }
 
