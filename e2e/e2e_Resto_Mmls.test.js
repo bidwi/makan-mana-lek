@@ -34,6 +34,37 @@ Scenario('liking one MML`s restaurant', async ({ I }) => {
   assert.strictEqual(firstRestoMmlTitle, likedRestoMmlTitle);
 });
 
+Scenario('unliking a MML`s restaurant (from scenario 2)', async ({ I }) => {
+  I.see('Tidak ada restoran untuk ditampilkan', '.restaurant-card__not__found');
+
+  I.amOnPage('/');
+
+  I.waitForElement('.resto-mml__judul a', 60);
+  I.seeElement('.resto-mml__judul a');
+  const firstRestoMml = locate('.resto-mml__judul a').first();
+  const firstRestoMmlTitle = await I.grabTextFrom(firstRestoMml);
+  I.click(firstRestoMml);
+
+  I.waitForElement('#sukaButton', 60);
+  I.seeElement('#sukaButton');
+  I.click('#sukaButton');
+
+  I.amOnPage('/#/favorite');
+  I.seeElement('.restaurant-card');
+  const firstRestoMmlFavorite = await I.grabTextFrom('.resto-mml__judul');
+
+  assert.strictEqual(firstRestoMmlTitle, firstRestoMmlFavorite);
+  I.click(firstRestoMml);
+
+  I.waitForElement('#sukaButton', 60);
+  I.seeElement('#sukaButton');
+  I.click('#sukaButton');
+
+  I.amOnPage('/#/favorite');
+  I.waitForElement('.restaurant-card__not__found', 60);
+  I.see('Tidak ada restoran untuk ditampilkan', '.restaurant-card__not__found');
+});
+
 Scenario('searching MML`s restaurants', async ({ I }) => {
   I.see('Tidak ada restoran untuk ditampilkan', '.restaurant-card__not__found');
 
